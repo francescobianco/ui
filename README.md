@@ -32,6 +32,10 @@ Agile UI does not impose on you how you must write the code, it focuses on build
           $this->addField('password', ['type'=>'password']);
       }
   }
+  
+  ** QUESTION 1: is the database automatically generated? ** 
+  ** QUETSION 2: is the database automatically updated by future changes to this model? **
+
 
   $app->layout->add(new \atk4\ui\CRUD())
     ->setModel(new User($db));
